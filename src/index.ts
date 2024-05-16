@@ -453,7 +453,7 @@ export class SubClean {
                     if (this.args.debug) this.log('[Info] Attempting to load language filters: ' + codes.join(','));
                     for (const code of codes) {
                         const filter = `${code}-main.json`;
-                        this.loadBlacklist(filter);
+                        await this.loadBlacklist(filter);
                     }
                 }
 
